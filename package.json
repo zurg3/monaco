@@ -1,0 +1,24 @@
+{
+  "name": "@zurg3/monaco",
+  "version": "1.0.0",
+  "description": "Monaco Editor ESM",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurg3/monaco"
+  },
+  "author": "zurg3",
+  "bugs": {
+    "url": "https://github.com/zurg3/monaco/issues"
+  },
+  "homepage": "https://zurg3.github.io/monaco/",
+  "license": "MIT",
+  "dependencies": {
+    "monaco-editor": "0.53.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.9"
+  }
+}
