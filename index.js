@@ -56,3 +56,16 @@ monaco.editor.create(container, {
   showDeprecated: false,
   tabSize: 2
 });
+
+container.onkeydown = (e) => {
+  if (e.ctrlKey && e.code === 'KeyO') {
+    e.preventDefault();
+    const data = localStorage.getItem('monaco_data') || '';
+    editor.setValue(data);
+  }
+  else if (e.ctrlKey && e.code === 'KeyS') {
+    e.preventDefault();
+    const data = editor.getValue();
+    localStorage.setItem('monaco_data', data);
+  }
+};
