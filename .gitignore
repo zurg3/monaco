@@ -1,7 +1,6 @@
 node_modules
 package-lock.json
-
-dist/*.ttf
 dist/vs
 dist/index.css
 dist/index.js
+dist/*.ttf

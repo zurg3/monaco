@@ -18,12 +18,17 @@ self.MonacoEnvironment = {
   }
 };
 
+const current_url = new URL(window.location);
+const params = Object.fromEntries(current_url.searchParams.entries());
+
 const container = document.getElementById('container');
+
+const lang = params.lang ? params.lang : 'plaintext';
 
 monaco.editor.create(container, {
   value: '',
   placeholder: '',
-  language: 'plaintext',
+  language: lang,
   theme: 'vs-dark',
   contextmenu: true,
   automaticLayout: true,

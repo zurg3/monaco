@@ -10,10 +10,10 @@ const workers = [
 ];
 
 esbuild.build({
-  entryPoints: workers.map((entry) => `./node_modules/monaco-editor/esm/${entry}`),
+  entryPoints: workers.map((entry) => `node_modules/monaco-editor/esm/${entry}`),
   bundle: true,
   format: 'iife',
-  outbase: './node_modules/monaco-editor/esm/',
+  outbase: 'node_modules/monaco-editor/esm',
   outdir: path.join(__dirname, 'dist')
 }).catch(() => process.exit(1));
 
