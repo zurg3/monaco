@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Monaco Editor ESM",
   "scripts": {
+    "start": "node server.js",
     "build": "node build.js"
   },
   "repository": {
@@ -19,6 +20,7 @@
     "monaco-editor": "0.53.0"
   },
   "devDependencies": {
-    "esbuild": "0.25.9"
+    "express": "5.1.0",
+    "esbuild": "0.25.10"
   }
 }

@@ -1,20 +1,20 @@
-import * as monaco from 'monaco-editor/esm/vs/editor/editor.main.js';
+import * as monaco from 'monaco-editor';
 
 self.MonacoEnvironment = {
   getWorkerUrl: function(module_id, label) {
     if (label === 'json') {
-      return './vs/language/json/json.worker.js';
+      return 'vs/language/json/json.worker.js';
     }
     if (label === 'css' || label === 'scss' || label === 'less') {
-      return './vs/language/css/css.worker.js';
+      return 'vs/language/css/css.worker.js';
     }
     if (label === 'html' || label === 'handlebars' || label === 'razor') {
-      return './vs/language/html/html.worker.js';
+      return 'vs/language/html/html.worker.js';
     }
     if (label === 'typescript' || label === 'javascript') {
-      return './vs/language/typescript/ts.worker.js';
+      return 'vs/language/typescript/ts.worker.js';
     }
-    return './vs/editor/editor.worker.js';
+    return 'vs/editor/editor.worker.js';
   }
 };
 
@@ -25,7 +25,7 @@ const container = document.getElementById('container');
 
 const lang = params.lang ? params.lang : 'plaintext';
 
-monaco.editor.create(container, {
+const editor = monaco.editor.create(container, {
   value: '',
   placeholder: '',
   language: lang,

@@ -12,6 +12,7 @@ const workers = [
 esbuild.build({
   entryPoints: workers.map((entry) => `node_modules/monaco-editor/esm/${entry}`),
   bundle: true,
+  minify: true,
   format: 'iife',
   outbase: 'node_modules/monaco-editor/esm',
   outdir: path.join(__dirname, 'dist')
@@ -20,6 +21,7 @@ esbuild.build({
 esbuild.build({
   entryPoints: ['index.js'],
   bundle: true,
+  minify: true,
   format: 'iife',
   outdir: path.join(__dirname, 'dist'),
   loader: {
