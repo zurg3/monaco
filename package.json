@@ -21,6 +21,6 @@
   },
   "devDependencies": {
     "express": "5.1.0",
-    "esbuild": "0.25.10"
+    "esbuild": "0.25.11"
   }
 }
