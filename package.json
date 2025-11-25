@@ -17,7 +17,7 @@
   "homepage": "https://zurg3.github.io/monaco/",
   "license": "MIT",
   "dependencies": {
-    "monaco-editor": "0.55.0"
+    "monaco-editor": "0.55.1"
   },
   "devDependencies": {
     "express": "5.1.0",
