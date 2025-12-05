@@ -20,7 +20,7 @@
     "monaco-editor": "0.55.1"
   },
   "devDependencies": {
-    "express": "5.2.0",
+    "express": "5.2.1",
     "esbuild": "0.27.0"
   }
 }
