@@ -10,7 +10,7 @@ const workers = [
 ];
 
 esbuild.build({
-  entryPoints: workers.map((entry) => `node_modules/monaco-editor/esm/${entry}`),
+  entryPoints: workers.map(entry => `node_modules/monaco-editor/esm/${entry}`),
   bundle: true,
   minify: true,
   format: 'iife',
